@@ -206,4 +206,5 @@ while (i != ch)
     i++
 }
 console.log("sampleArray(", arr, ",", ch,") ->", arr1);
+return arr1
 }

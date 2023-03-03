@@ -184,10 +184,11 @@ function four1()
 
     let xx = function randomNumber (min, max)
     {
-        let rand = min + Math.random() * (max + 1 - min);
-        return Math.floor(rand);
+        let rand = min + Math.floor(Math.random() * max)
+        return Math.floor(rand)
     }
     console.log("randomNumber(", min,",", max,") ->", xx(min, max))
+    return xx(min, max)
 }
 
 //----------------------------------------------------------5-1
@@ -196,15 +197,14 @@ function sampleArray()
 {
 let arr = [0,1,2,3,4,5,6,7,8,9,10]
 let arr1 = []
-let ch = +prompt( "введите количество выводимых значений из массива" )
+let ch = four1()
 let i = 0
-let rand
 while (i != ch)
 {
-    rand = Math.floor(Math.random() * arr.length);
-    arr1.push(rand)
+    rand = Math.floor(Math.random() * arr.length)
+    arr1.push(arr[rand])
     i++
 }
-console.log("sampleArray(", arr, ",", ch,") ->", arr1);
-return arr1
+console.log("sampleArray(", arr, ",", ch,") ->", arr1)
+return
 }

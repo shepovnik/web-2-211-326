@@ -164,15 +164,15 @@ console.log("absValue(", abs,") ->", xx(abs))
 }
 
 //----------------------------------------------------------3-1
-function three1()
-{
-    const student  = { group: 201, last_name: "Иванов", first_name: "Иван" };
 
-    for (let property in student ) {
-    console.log("список свойств:", property)
-}
-    console.log("Студент", student.first_name, student.last_name, "учится в", student.group, "группе")
-    
+function three1(){
+    let student = {
+        group: prompt("Укажите номер учебной группы, в которой обучается студент"),
+        last_name: prompt("Введите фамилию студента"),
+        first_name: prompt("Введите имя студента")
+    }
+    console.log(`Список свойств: ${Object.keys(student)[0]}, ${Object.keys(student)[1]}, ${Object.keys(student)[2]}`)
+    console.log(`Студент ${student.first_name} ${student.last_name} учится в ${student.group} группе`)
 }
 
 //----------------------------------------------------------4-1

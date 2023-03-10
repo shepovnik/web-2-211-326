@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap');
+
+:root
+{
+    font-size: 62.5%; 
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    --primary-color1: #000000;
+    --primary-color2: #FFFFFF; 
+    --primary-color3: #00D5E4;
+    --primary-color4: #1c1b1b;
+}
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media all and (min-width: 1024px){
+    .all{
+        margin-left: 24rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .all2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .all .row0 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+    h1{
+        margin-bottom: 1.5rem;
+    }
+    .img1{
+        display: none;
+    }
+    .all h1{
+        max-width: 82rem;
+        margin-left: 0;
+    }
+    .all .p1{
+        margin-left: 0;
+    }
+    .menu{
+        display: none;
+    }
+    /* .ull .ul{
+        display: flex;
+        margin-right: 23.6rem;
+    } */
+    /* .m1{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2rem;
+        margin-right: 2.5rem;
+        align-items: center;
+    } */
+    /* .a1{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--primary-color2);
+    text-decoration: none;
+    padding-left: 3.6rem;
+    } */
+    .all2 .img2 {
+        display: flex;
+        flex-direction: row;
+        max-width: 61rem;
+        max-height: 64rem;
+    }
+    .logo{
+        margin-left: 24rem;
+    } 
+    .ull .ul{
+        display: flex;
+        margin-right: 23rem;
+    }
+}
+.ull .ul{
+    display: flex;
+    margin-right: 0;
+}
+.a1{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--primary-color2);
+    text-decoration: none;
+    padding-left: 3.6rem;
+
+    }
+/* .openModal{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--primary-color2);
+    text-decoration: none;
+    padding-left: 3.6rem;
+} */
+
+body{
+    background-color: var(--primary-color1);
+}
+.hed{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2.5rem;
+    align-items: center;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+.img2{
+    display: none;
+}
+.ul{
+    display: none;
+}
+
+hr{
+    border: 0.1rem solid var(--primary-color4);
+}
+h1{
+    font-size: 3rem;
+    color: var(--primary-color2);
+    line-height: 4.2rem;
+    margin: 0.5rem 2rem;
+}
+
+.blue{
+    font-size: 1.6rem;
+    color: var(--primary-color3);
+    line-height: 1.9rem;
+    font-weight: 900;
+}
+.p1{
+
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: var(--primary-color2);
+    margin: 0 2rem;
+}
+.row0{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.row1{
+    display: flex;
+}
+.row2{
+    display: flex;
+    align-items: center;
+    margin-top: 2.7rem;
+}
+.p2{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--primary-color2);
+    margin-left: 2rem;
+    max-width: 22rem;
+}
+.form1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+.send{ 
+    background-color: var(--primary-color3);
+    border: 0;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    color: var(--primary-color4);
+}
+.but{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 115%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 9rem;
+    background-color: var(--primary-color3);
+    color: var(--primary-color1);
+    margin-top: 2rem;
+    width: 100%;
+}
+.stnd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hed .logo{
+    transition: 0.5s;
+}
+.hed .logo:hover{
+    transform: scale(1.2); 
+}
+.hed .menu{
+    transition: 0.5s;
+}
+.hed .menu:hover{
+    transform: scale(1.2); 
+}
+button{
+    transition: 0.5s;
+}
+button:hover {
+    transform: scale(1.1); 
+}
+input{
+    transition: 0.5s;
+}
+input:hover {
+    transform: scale(0.9); 
+}
+label{
+    transition: 0.5s;
+}
+label:hover {
+    transform: scale(1.2); 
+}
+::selection {
+    background-color: rgb(183, 213, 241);
+}
+.m1 .a1{
+    transition: 0.5s;
+}
+.m1 .a1:hover{
+    transform: scale(1.2); 
+}
+.sign:hover {
+    box-shadow: inset 0 0 15px 0.5px var(--primary-color1);
+}
+.sign:active {
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}
+.pole{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem ;   
+    margin: 0 auto;
+    gap: 0.75rem; 
+    width: 32rem; 
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+button{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--primary-color4);
+   
+}
+.registration input{
+    padding: 1rem 2.8rem 1rem 2.8rem;
+    border: solid var(--primary-color4) 0.1rem;
+    border-radius: 9rem;
+    margin-bottom: 2.3rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.margtop {
+    margin-top: 5rem;
+}
+.type input {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 5rem 0 0;
+}
+.modal{
+    width: 50rem;
+    border: 0;
+    background-color: var(--primary-color1);
+    border-radius: 16px;
+    padding: 0;
+}
+.registration{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    line-height: 167%;
+    padding: 3.5rem;
+    align-items: stretch;
+    max-width: 62rem;
+    margin: 0 auto;
+    text-align: left;
+    background-color: var(--primary-color4);
+    border: 0;
+    color: var(--primary-color2);
+}
+.dialogname{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.headerright .sign {
+    margin-left: 1.7rem;
+    padding: 1.4rem 2.2rem 1.1rem 3.1rem;
+    color: var(--primary-color1);
+    background: var(--primary-color4);
+    border-radius: 0.5rem;
+    font-weight: 900;
+}
+.modal::backdrop{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+}

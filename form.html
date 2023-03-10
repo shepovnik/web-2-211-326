@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+</head>
+<body class="wrapper">
+    <header>
+        <div class="m1">
+    <div class="hed">
+        <a class="logo " href="index.html"> <img src="picture/logo.svg" alt="лого">  </a>
+        <!-- <img class="menu" src="picture/MENU.svg" alt="меню"> -->
+
+
+    <div class="ull">
+    <ul class="ul">
+        <a class="a1" href="form.html">Login</a>
+        <!-- <a class="a1 openModal" href="#">SIGN UP</a> -->
+        
+    </ul>
+    </div>
+</div>
+</div>
+    <hr>
+</header>
+    <main class="reg">
+        <section  class="margtop">
+            <h1 class="sr-only">Login</h1>
+            <form class="registration" name="contact" method="POST" action="https://httpbin.org/post">
+                <input type="hidden" name="form-name" value="contact">
+
+                <label>Phone Number:<input type="tel" placeholder="+7 (9XX) XXX-XXXX" name="Number" required></label>
+                <label>Name:<input type="text" placeholder="Name" name="Name" required></label>
+                <button class="but" type="submit">Send</button>
+                <button class="but" type="reset">Remove form</button>
+            </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

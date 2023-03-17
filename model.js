@@ -41,7 +41,7 @@ function onWindowResize() {
 
 }
 
-const clock = new THREE.Clock();
+
 
 let scene = new THREE.Scene();
 

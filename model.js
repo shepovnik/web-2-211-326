@@ -67,24 +67,13 @@ let directionalLight = new THREE.DirectionalLight(0xffffff, 1);
 directionalLight.position.set(25, 25, 10);
 directionalLight.castShadow = true;
 
-directionalLight.shadow.mapSize.width = 2000; // default
-directionalLight.shadow.mapSize.height = 2000; // default
-directionalLight.shadow.camera.top = 10;
-directionalLight.shadow.camera.bottom = - 10;
-directionalLight.shadow.camera.left = - 10;
-directionalLight.shadow.camera.right = 10;
 scene.add(directionalLight);
 let upLight = new THREE.DirectionalLight(0xffffff, 1);
 
 upLight.position.set(15, 30, 40);
 upLight.castShadow = true;
 
-upLight.shadow.mapSize.width = 2000; // default
-upLight.shadow.mapSize.height = 2000; // default
-upLight.shadow.camera.top = 10;
-upLight.shadow.camera.bottom = - 10;
-upLight.shadow.camera.left = - 10;
-upLight.shadow.camera.right = 10;
+
 scene.add(upLight);
 
 const plane = new THREE.Mesh(
